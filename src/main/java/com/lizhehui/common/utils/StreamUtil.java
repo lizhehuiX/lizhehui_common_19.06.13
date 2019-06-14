@@ -48,7 +48,7 @@ public class StreamUtil {
 		}
 		bos.flush();
 		String string = bos.toString("utf-8");// 始用utf-8
-		closeAll(bos);
+		closeAll(src);
 		return string;
 
 	}
